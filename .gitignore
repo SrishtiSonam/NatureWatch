@@ -1,0 +1,15 @@
+# Ignore virtual environment
+venv/
+
+# Ignore pickle files anywhere in the project
+**/*.pkl
+
+# Ignore Python cache
+__pycache__/
+**/__pycache__/
+
+# Ignore datasets folder
+datasets/
+
+# Ignore log files
+*.log

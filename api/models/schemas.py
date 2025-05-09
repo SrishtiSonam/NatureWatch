@@ -21,3 +21,4 @@ class PredictionInput(BaseModel):
 
 class PredictionOutput(BaseModel):
     prediction: float = Field(..., ge=0, le=1)
+    prediction_variability: float = Field(..., ge=0.0, le=0.5)

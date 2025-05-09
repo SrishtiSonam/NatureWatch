@@ -49,6 +49,18 @@ class ModelService:
             logger.error(f"Error loading {model_name}: {e}")
             raise
 
+    def precision(self, model_name: str) -> float:
+
+        # Read the metrics data from the file
+        with open(r"C:\Users\Srish\Desktop\NatureWatch\model_metrics.txt", "r") as file:
+            metrics_data = eval(file.read())
+
+        if model_name in metrics_data:
+            return metrics_data[model_name].get('mse', 0.0)
+        else:
+            logger.info(f"Model '{model_name}' not found in metrics file")
+        return 0.0
+
     def _preprocess_input(self, input_data: Dict, model) -> pd.DataFrame:
         # Convert input data to DataFrame
         df = pd.DataFrame([input_data])
@@ -93,6 +105,15 @@ class ModelService:
         except Exception as e:
             logger.exception("Prediction failed with error:")  # Log full traceback
             raise
+
+    def prediction_variability(self, model_name: str) -> float:
+        try:
+            variability = self.precision(model_name)
+            return(float(variability))
+        except Exception as e:
+            logger.exception("Prediction failed with error:")
+            raise
+
 
 def get_model_service(request: Request) -> ModelService:
     return request.app.state.model_service

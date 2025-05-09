@@ -9,7 +9,7 @@ import ValueSlider from '@/components/ui/ValueSlider';
 import CircularSlider from '@/components/ui/CircularSlider';
 import GeographicalFeatures from '@/components/features/GeographicalFeatures';
 import { fetchAvailableModels, predictLandslideRisk, Model } from '@/services/apiService';
-import { 
+import {
   Select,
   SelectContent,
   SelectItem,
@@ -30,27 +30,27 @@ import {
 
 const Predict = () => {
   const navigate = useNavigate();
-  
+
   // Geographical features state
   const [elevation, setElevation] = useState(500);
-  const [slope, setSlope] = useState(30);
-  const [aspect, setAspect] = useState(180);
-  
+  const [slope, setSlope] = useState(() => Math.floor(Math.random() * 90)); // 0–90 degrees
+  const [aspect, setAspect] = useState(() => Math.floor(Math.random() * 360)); // 0–360 degrees
+
   // Environmental features state
-  const [rainfallDaily, setRainfallDaily] = useState(30);
-  const [rainfallMonthly, setRainfallMonthly] = useState(170);
-  const [vegetationDensity, setVegetationDensity] = useState(0.3);
-  const [soilMoisture, setSoilMoisture] = useState(50);
-  const [soilDepth, setSoilDepth] = useState(2.0);
-  const [snowMelt, setSnowMelt] = useState(0.0);
-  const [landslideProb, setLandslideProb] = useState(0.1);
-  
+  const [rainfallDaily, setRainfallDaily] = useState(() => Math.floor(Math.random() * 120)); // mm
+  const [rainfallMonthly, setRainfallMonthly] = useState(() => Math.floor(Math.random() * 800)); // mm
+  const [vegetationDensity, setVegetationDensity] = useState(() => +(Math.random().toFixed(2))); // 0.00–1.00
+  const [soilMoisture, setSoilMoisture] = useState(() => Math.floor(Math.random() * 80)); // %
+  const [soilDepth, setSoilDepth] = useState(() => +(Math.random() * 5).toFixed(1)); // 0.0–5.0 meters
+  const [snowMelt, setSnowMelt] = useState(() => +(Math.random() * 10).toFixed(1)); // mm
+  const [landslideProb, setLandslideProb] = useState(() => +(Math.random().toFixed(2))); // 0.00–1.00
+
   // Geological features state
   const [lithology, setLithology] = useState('granite');
-  const [distanceToFaults, setDistanceToFaults] = useState(500);
-  const [earthquakeMagnitude, setEarthquakeMagnitude] = useState(0.0);
-  const [previousLandslides, setPreviousLandslides] = useState(0);
-  
+  const [distanceToFaults, setDistanceToFaults] = useState(500);// meters
+  const [earthquakeMagnitude, setEarthquakeMagnitude] = useState(() => +(Math.random() * 7).toFixed(1)); // Richter scale
+  const [previousLandslides, setPreviousLandslides] = useState(() => Math.floor(Math.random() * 8)); // count
+
   // Human factors
   const [landUse, setLandUse] = useState('urban');
   const [humanActivity, setHumanActivity] = useState('low');
@@ -59,7 +59,7 @@ const Predict = () => {
   const [availableModels, setAvailableModels] = useState<Model[]>([]);
   const [selectedModel, setSelectedModel] = useState<string | null>(null);
   const [isLoadingModels, setIsLoadingModels] = useState(false);
-  
+
   // Loading state
   const [isLoading, setIsLoading] = useState(false);
 
@@ -71,7 +71,7 @@ const Predict = () => {
         const models = await fetchAvailableModels();
         console.log("Models fetched:", models);
         setAvailableModels(models);
-        
+
         // Automatically select the first model in the list as default
         if (models.length > 0) {
           setSelectedModel(models[0].name);
@@ -93,14 +93,14 @@ const Predict = () => {
         setIsLoadingModels(false);
       }
     };
-    
+
     getModels();
   }, []);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
-    
+
     if (!selectedModel) {
       toast({
         title: "No Model Selected",
@@ -111,7 +111,7 @@ const Predict = () => {
       setIsLoading(false);
       return;
     }
-    
+
     toast({
       title: "Processing prediction",
       description: "Sending data to the server...",
@@ -140,8 +140,8 @@ const Predict = () => {
       };
 
       const response = await predictLandslideRisk(requestData);
-      
-      navigate('/results', { 
+
+      navigate('/results', {
         state: {
           ...requestData,
           riskScore: response.risk_score
@@ -164,8 +164,8 @@ const Predict = () => {
   const ModelSelectionDialog = () => (
     <Dialog>
       <DialogTrigger asChild>
-        <Button 
-          variant="outline" 
+        <Button
+          variant="outline"
           size="icon"
           className="fixed top-24 right-6 z-10 rounded-full shadow-md border-primary/20 bg-background hover:bg-accent"
           title="Select Prediction Model"
@@ -206,7 +206,7 @@ const Predict = () => {
               </Select>
             </div>
           )}
-          
+
           <div className="flex justify-between pt-2">
             <span className="text-sm text-muted-foreground">
               {selectedModel ? `Using: ${selectedModel}` : 'No model selected'}
@@ -223,13 +223,13 @@ const Predict = () => {
         <div className="min-h-screen pt-8 pb-16 px-6 relative">
           {/* Model Selection Dialog */}
           <ModelSelectionDialog />
-          
+
           {/* Mesh Background */}
           <div className="absolute inset-0 -z-10 overflow-hidden">
             <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
             <div className="absolute inset-0 bg-gradient-to-b from-background to-background/50"></div>
           </div>
-          
+
           <div className="max-w-6xl mx-auto">
             <FadeIn className="text-center mb-8">
               <h1 className="text-4xl font-light">Landslide Risk Prediction</h1>
@@ -246,7 +246,7 @@ const Predict = () => {
             <form onSubmit={handleSubmit} className="mt-8 space-y-8">
               {/* Geographical Features Section */}
               <FadeIn delay={0.1}>
-                <GeographicalFeatures 
+                <GeographicalFeatures
                   elevation={elevation}
                   setElevation={setElevation}
                   slope={slope}
@@ -271,7 +271,7 @@ const Predict = () => {
                       tooltip="Daily rainfall directly affects soil saturation and pore water pressure, increasing landslide risk."
                       onChange={setRainfallDaily}
                     />
-                    
+
                     <ValueSlider
                       label="Monthly Rainfall"
                       min={0}
@@ -282,7 +282,7 @@ const Predict = () => {
                       tooltip="Cumulative monthly rainfall is a key indicator of long-term soil moisture conditions."
                       onChange={setRainfallMonthly}
                     />
-                    
+
                     <ValueSlider
                       label="Vegetation Density"
                       min={0}
@@ -293,7 +293,7 @@ const Predict = () => {
                       tooltip="Higher vegetation density typically increases slope stability through root systems."
                       onChange={setVegetationDensity}
                     />
-                    
+
                     <ValueSlider
                       label="Soil Moisture"
                       min={0}
@@ -329,7 +329,7 @@ const Predict = () => {
                         </SelectContent>
                       </Select>
                     </div>
-                    
+
                     <ValueSlider
                       label="Distance to Faults"
                       min={0}
@@ -340,7 +340,7 @@ const Predict = () => {
                       tooltip="Proximity to fault lines increases seismic vulnerability and landslide risk."
                       onChange={setDistanceToFaults}
                     />
-                    
+
                     <ValueSlider
                       label="Earthquake Magnitude"
                       min={0}
@@ -351,7 +351,7 @@ const Predict = () => {
                       tooltip="Recent seismic activity magnitude can trigger landslides (0 = no recent activity)."
                       onChange={setEarthquakeMagnitude}
                     />
-                    
+
                     <ValueSlider
                       label="Previous Landslides"
                       min={0}
@@ -381,7 +381,7 @@ const Predict = () => {
                       tooltip="The depth of soil affects stability and landslide volume potential."
                       onChange={setSoilDepth}
                     />
-                    
+
                     <ValueSlider
                       label="Snow Melt"
                       min={0}
@@ -392,7 +392,7 @@ const Predict = () => {
                       tooltip="Rate of snow melt contributes to soil saturation and can trigger landslides."
                       onChange={setSnowMelt}
                     />
-                    
+
                     <ValueSlider
                       label="Historical Landslide Probability"
                       min={0}
@@ -428,7 +428,7 @@ const Predict = () => {
                         </SelectContent>
                       </Select>
                     </div>
-                    
+
                     <div className="space-y-2">
                       <div className="flex items-center">
                         <Label htmlFor="humanActivity" className="text-sm font-medium">Human Activity</Label>
@@ -451,9 +451,9 @@ const Predict = () => {
               </div>
 
               <FadeIn delay={0.6} className="flex justify-center">
-                <Button 
-                  type="submit" 
-                  size="lg" 
+                <Button
+                  type="submit"
+                  size="lg"
                   className="px-8 rounded-full"
                   disabled={isLoading || !selectedModel}
                 >

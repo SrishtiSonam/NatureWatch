@@ -21,7 +21,12 @@ async def predict(
 ):
     try:
         prediction = model_service.predict(data.model_name, data.dict(exclude={'model_name'}))
-        return {"prediction": prediction}
+        prediction_variability = model_service.precision(data.model_name)
+        return {
+            "prediction": prediction,
+            "prediction_variability": prediction_variability
+        }
+
     except FileNotFoundError as e:
         raise HTTPException(status_code=404, detail=str(e))
     except ValueError as e:
