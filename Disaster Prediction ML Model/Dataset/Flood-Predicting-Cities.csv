@@ -1,0 +1,31 @@
+City,State,Latitude,Longitude,Rainfall_mm,Elevation_m,River_Discharge_m3_s
+Mumbai,Maharashtra,19.076,72.8777,172,1420,41
+Delhi,Delhi,28.6139,77.209,147,598,31
+Kolkata,West Bengal,22.5726,88.3639,185,910,36
+Bangalore,Karnataka,12.9716,77.5946,248,384,18
+Chennai,Tamil Nadu,13.0827,80.2707,152,712,23
+Hyderabad,Telangana,17.385,78.4867,172,1153,16
+Ahmedabad,Gujarat,23.0225,72.5714,139,743,17
+Pune,Maharashtra,18.5204,73.8567,133,665,14
+Surat,Gujarat,21.1702,72.8311,168,1000,43
+Jaipur,Rajasthan,26.9124,75.7873,134,443,11
+Lucknow,Uttar Pradesh,26.8467,80.9462,144,189,37
+Kanpur,Uttar Pradesh,26.4499,80.3319,177,292,43
+Nagpur,Maharashtra,21.1458,79.0882,160,989,18
+Indore,Madhya Pradesh,22.7196,75.8577,240,1252,14
+Vadodara,Gujarat,22.3072,73.1812,116,608,33
+Patna,Bihar,25.5941,85.1376,125,537,30
+Bhopal,Madhya Pradesh,23.2599,77.4126,225,472,12
+Ranchi,Jharkhand,23.3441,85.3096,193,1227,29
+Vijayawada,Andhra Pradesh,16.5063,80.648,105,249,34
+Coimbatore,Tamil Nadu,11.0168,76.9558,163,699,31
+Agra,Uttar Pradesh,27.1767,78.0081,210,1021,50
+Nashik,Maharashtra,19.9975,73.7898,101,1099,42
+Jodhpur,Rajasthan,26.2389,73.0243,134,956,17
+Guwahati,Assam,26.1445,91.7362,223,1389,36
+Shillong,Meghalaya,25.5788,91.883,211,751,46
+Tiruchirappalli,Tamil Nadu,10.7905,78.7047,142,748,11
+Agartala,Tripura,23.8315,91.2868,250,1323,10
+Imphal,Manipur,24.8178,93.9368,170,345,33
+Dehradun,Uttarakhand,30.3165,78.0322,151,1268,23
+Rudrapur,Uttarakhand,29.0192,79.2985,230,852,11

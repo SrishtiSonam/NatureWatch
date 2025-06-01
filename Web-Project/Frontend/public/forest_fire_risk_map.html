@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d2d5c1fdcf295da1e64a1be081158c73 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_d2d5c1fdcf295da1e64a1be081158c73" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_d2d5c1fdcf295da1e64a1be081158c73 = L.map(
+                "map_d2d5c1fdcf295da1e64a1be081158c73",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_46320f3916a8919a8ece42a9a979876d = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_46320f3916a8919a8ece42a9a979876d.addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+            var circle_marker_5f3e3366e007c8ce0a2461b3c924ecd5 = L.circleMarker(
+                [11.7401, 92.6586],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_f3ad4602f0dcde23287b7e095b42981a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b596337c460289791f615a2d907f4913 = $(`<div id="html_b596337c460289791f615a2d907f4913" style="width: 100.0%; height: 100.0%;">Andaman and Nicobar Islands: Less Prone</div>`)[0];
+                popup_f3ad4602f0dcde23287b7e095b42981a.setContent(html_b596337c460289791f615a2d907f4913);
+            
+        
+
+        circle_marker_5f3e3366e007c8ce0a2461b3c924ecd5.bindPopup(popup_f3ad4602f0dcde23287b7e095b42981a)
+        ;
+
+        
+    
+    
+            var circle_marker_fa7194b54f64df48ab6f1f9abbc9b13a = L.circleMarker(
+                [15.9129, 79.74],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_280eeef2e1ec6bd3652ec37ebecaa3c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19d73891251cb8ea7cabdd0413f3c556 = $(`<div id="html_19d73891251cb8ea7cabdd0413f3c556" style="width: 100.0%; height: 100.0%;">Andhra Pradesh: Medium Prone</div>`)[0];
+                popup_280eeef2e1ec6bd3652ec37ebecaa3c7.setContent(html_19d73891251cb8ea7cabdd0413f3c556);
+            
+        
+
+        circle_marker_fa7194b54f64df48ab6f1f9abbc9b13a.bindPopup(popup_280eeef2e1ec6bd3652ec37ebecaa3c7)
+        ;
+
+        
+    
+    
+            var circle_marker_7ea443cbd3c8588e26c24154d5c2a47f = L.circleMarker(
+                [27.1313, 93.6053],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_0abf9edcb39a2e73d18bb70e7bd305b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e57ab43c341143afa558798a44216f5c = $(`<div id="html_e57ab43c341143afa558798a44216f5c" style="width: 100.0%; height: 100.0%;">Arunachal Pradesh: Less Prone</div>`)[0];
+                popup_0abf9edcb39a2e73d18bb70e7bd305b8.setContent(html_e57ab43c341143afa558798a44216f5c);
+            
+        
+
+        circle_marker_7ea443cbd3c8588e26c24154d5c2a47f.bindPopup(popup_0abf9edcb39a2e73d18bb70e7bd305b8)
+        ;
+
+        
+    
+    
+            var circle_marker_bfdfb422c9cbed0cd0f7923d3cd3ea89 = L.circleMarker(
+                [26.2006, 92.9376],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_55cab1de83b593743d87ef41e26dddcf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ac8d71b4d8ac19ab21cb285c86c659bc = $(`<div id="html_ac8d71b4d8ac19ab21cb285c86c659bc" style="width: 100.0%; height: 100.0%;">Assam: Highly Prone</div>`)[0];
+                popup_55cab1de83b593743d87ef41e26dddcf.setContent(html_ac8d71b4d8ac19ab21cb285c86c659bc);
+            
+        
+
+        circle_marker_bfdfb422c9cbed0cd0f7923d3cd3ea89.bindPopup(popup_55cab1de83b593743d87ef41e26dddcf)
+        ;
+
+        
+    
+    
+            var circle_marker_cbaa6b0fb6e3a19be03b7093bcf9c1b8 = L.circleMarker(
+                [25.0961, 85.3131],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_fcb560f362b16dd2509021425e06aeba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c16536ad1df732dcf8e3ba544130e3a7 = $(`<div id="html_c16536ad1df732dcf8e3ba544130e3a7" style="width: 100.0%; height: 100.0%;">Bihar: Less Prone</div>`)[0];
+                popup_fcb560f362b16dd2509021425e06aeba.setContent(html_c16536ad1df732dcf8e3ba544130e3a7);
+            
+        
+
+        circle_marker_cbaa6b0fb6e3a19be03b7093bcf9c1b8.bindPopup(popup_fcb560f362b16dd2509021425e06aeba)
+        ;
+
+        
+    
+    
+            var circle_marker_83223c577cbaf9fefba70c63952e4195 = L.circleMarker(
+                [30.7333, 76.7794],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_52f3a0fdc7d8b0d37b99008fa83a0a05 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b4457d4f9f3e23f153e96845a3d866a = $(`<div id="html_2b4457d4f9f3e23f153e96845a3d866a" style="width: 100.0%; height: 100.0%;">Chandigarh: Less Prone</div>`)[0];
+                popup_52f3a0fdc7d8b0d37b99008fa83a0a05.setContent(html_2b4457d4f9f3e23f153e96845a3d866a);
+            
+        
+
+        circle_marker_83223c577cbaf9fefba70c63952e4195.bindPopup(popup_52f3a0fdc7d8b0d37b99008fa83a0a05)
+        ;
+
+        
+    
+    
+            var circle_marker_58eceefc2f3550e5d86044eeac6a2350 = L.circleMarker(
+                [21.2787, 81.8661],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_a06a7667f78f934aba9ef8be7361572f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4bc115bd832f3c0ef375bd6bbc9eb679 = $(`<div id="html_4bc115bd832f3c0ef375bd6bbc9eb679" style="width: 100.0%; height: 100.0%;">Chhattisgarh: Less Prone</div>`)[0];
+                popup_a06a7667f78f934aba9ef8be7361572f.setContent(html_4bc115bd832f3c0ef375bd6bbc9eb679);
+            
+        
+
+        circle_marker_58eceefc2f3550e5d86044eeac6a2350.bindPopup(popup_a06a7667f78f934aba9ef8be7361572f)
+        ;
+
+        
+    
+    
+            var circle_marker_b2cf4e0597864c78852226eeac082629 = L.circleMarker(
+                [20.1805, 73.0167],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_f205f60ecdeda49ec8adbeb4df69756b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dde039f2e1105ac8e61c0b17c32fbeba = $(`<div id="html_dde039f2e1105ac8e61c0b17c32fbeba" style="width: 100.0%; height: 100.0%;">Dadra and Nagar Haveli: Less Prone</div>`)[0];
+                popup_f205f60ecdeda49ec8adbeb4df69756b.setContent(html_dde039f2e1105ac8e61c0b17c32fbeba);
+            
+        
+
+        circle_marker_b2cf4e0597864c78852226eeac082629.bindPopup(popup_f205f60ecdeda49ec8adbeb4df69756b)
+        ;
+
+        
+    
+    
+            var circle_marker_24c8d8314f407fa869485ac89ab38736 = L.circleMarker(
+                [20.3974, 72.8326],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_da02b5d182c025025b4810e7d329f1d1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8099500bbf4c6935a39d2479081d2c87 = $(`<div id="html_8099500bbf4c6935a39d2479081d2c87" style="width: 100.0%; height: 100.0%;">Daman and Diu: Less Prone</div>`)[0];
+                popup_da02b5d182c025025b4810e7d329f1d1.setContent(html_8099500bbf4c6935a39d2479081d2c87);
+            
+        
+
+        circle_marker_24c8d8314f407fa869485ac89ab38736.bindPopup(popup_da02b5d182c025025b4810e7d329f1d1)
+        ;
+
+        
+    
+    
+            var circle_marker_e335674dac9107cb3eb4f1654b8cb8a4 = L.circleMarker(
+                [28.6139, 77.209],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_38460f795abb41d5af4ffe89354723af = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_94f7b676df188026ae0d874d613ce8f4 = $(`<div id="html_94f7b676df188026ae0d874d613ce8f4" style="width: 100.0%; height: 100.0%;">Delhi: Less Prone</div>`)[0];
+                popup_38460f795abb41d5af4ffe89354723af.setContent(html_94f7b676df188026ae0d874d613ce8f4);
+            
+        
+
+        circle_marker_e335674dac9107cb3eb4f1654b8cb8a4.bindPopup(popup_38460f795abb41d5af4ffe89354723af)
+        ;
+
+        
+    
+    
+            var circle_marker_2b9e0dcda2088c32315e8327818fee6a = L.circleMarker(
+                [15.2993, 74.124],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_083887929ddeb28445239fa6305e38c7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8165526c907fac9c213464b3fbf0a06e = $(`<div id="html_8165526c907fac9c213464b3fbf0a06e" style="width: 100.0%; height: 100.0%;">Goa: Less Prone</div>`)[0];
+                popup_083887929ddeb28445239fa6305e38c7.setContent(html_8165526c907fac9c213464b3fbf0a06e);
+            
+        
+
+        circle_marker_2b9e0dcda2088c32315e8327818fee6a.bindPopup(popup_083887929ddeb28445239fa6305e38c7)
+        ;
+
+        
+    
+    
+            var circle_marker_4e042eb2206b968af6791f33ffa724ff = L.circleMarker(
+                [22.2587, 71.1924],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_7db95b6afeacdbe10f2d921c27d75842 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_245408003a1f83cd6bc51b6747275eb0 = $(`<div id="html_245408003a1f83cd6bc51b6747275eb0" style="width: 100.0%; height: 100.0%;">Gujarat: Less Prone</div>`)[0];
+                popup_7db95b6afeacdbe10f2d921c27d75842.setContent(html_245408003a1f83cd6bc51b6747275eb0);
+            
+        
+
+        circle_marker_4e042eb2206b968af6791f33ffa724ff.bindPopup(popup_7db95b6afeacdbe10f2d921c27d75842)
+        ;
+
+        
+    
+    
+            var circle_marker_622806494d66bc2055c5bf1445459724 = L.circleMarker(
+                [29.0588, 76.0856],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_c0a4d2b195128c1860f0f263d1ea51ca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_998213ff69a53d15eb83ba300d16edae = $(`<div id="html_998213ff69a53d15eb83ba300d16edae" style="width: 100.0%; height: 100.0%;">Haryana: Less Prone</div>`)[0];
+                popup_c0a4d2b195128c1860f0f263d1ea51ca.setContent(html_998213ff69a53d15eb83ba300d16edae);
+            
+        
+
+        circle_marker_622806494d66bc2055c5bf1445459724.bindPopup(popup_c0a4d2b195128c1860f0f263d1ea51ca)
+        ;
+
+        
+    
+    
+            var circle_marker_b7fd065cd9e51f2519533f92c8bc2f76 = L.circleMarker(
+                [32.0781, 77.1734],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_aa1eb1d14096b47d3748b12e023d0d79 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2455f2d1c34dbd222753fb77cea2d48e = $(`<div id="html_2455f2d1c34dbd222753fb77cea2d48e" style="width: 100.0%; height: 100.0%;">Himachal Pradesh: Less Prone</div>`)[0];
+                popup_aa1eb1d14096b47d3748b12e023d0d79.setContent(html_2455f2d1c34dbd222753fb77cea2d48e);
+            
+        
+
+        circle_marker_b7fd065cd9e51f2519533f92c8bc2f76.bindPopup(popup_aa1eb1d14096b47d3748b12e023d0d79)
+        ;
+
+        
+    
+    
+            var circle_marker_8ec945913b7c96684d79c6a865bb14e8 = L.circleMarker(
+                [33.7788, 76.5762],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_a8848c3791295aa2303939f1a3012a0a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13678263fe6921cae07aeb29c9633546 = $(`<div id="html_13678263fe6921cae07aeb29c9633546" style="width: 100.0%; height: 100.0%;">Jammu and Kashmir: Less Prone</div>`)[0];
+                popup_a8848c3791295aa2303939f1a3012a0a.setContent(html_13678263fe6921cae07aeb29c9633546);
+            
+        
+
+        circle_marker_8ec945913b7c96684d79c6a865bb14e8.bindPopup(popup_a8848c3791295aa2303939f1a3012a0a)
+        ;
+
+        
+    
+    
+            var circle_marker_ffb26dfed9e31a38630b99969bbfce57 = L.circleMarker(
+                [23.61, 85.2798],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_3518a9e78b650834543aa7778e1feca6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de4ba8e61d85ceddea6b18dab18d5b72 = $(`<div id="html_de4ba8e61d85ceddea6b18dab18d5b72" style="width: 100.0%; height: 100.0%;">Jharkhand: Less Prone</div>`)[0];
+                popup_3518a9e78b650834543aa7778e1feca6.setContent(html_de4ba8e61d85ceddea6b18dab18d5b72);
+            
+        
+
+        circle_marker_ffb26dfed9e31a38630b99969bbfce57.bindPopup(popup_3518a9e78b650834543aa7778e1feca6)
+        ;
+
+        
+    
+    
+            var circle_marker_9820e5d8ca7497826b5aeeb661caf7fd = L.circleMarker(
+                [15.3173, 75.7138],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_2e621594ff3145b30d99bab108897380 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50146947e80cfad4a9d6d8e9927465c1 = $(`<div id="html_50146947e80cfad4a9d6d8e9927465c1" style="width: 100.0%; height: 100.0%;">Karnataka: Medium Prone</div>`)[0];
+                popup_2e621594ff3145b30d99bab108897380.setContent(html_50146947e80cfad4a9d6d8e9927465c1);
+            
+        
+
+        circle_marker_9820e5d8ca7497826b5aeeb661caf7fd.bindPopup(popup_2e621594ff3145b30d99bab108897380)
+        ;
+
+        
+    
+    
+            var circle_marker_67b05ba1ac117e424910230b28c3af79 = L.circleMarker(
+                [10.8505, 76.2711],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_359a72405567d18d290ef054dcd3aa5d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c64b80d5885d5ba73a589a6cb81c5fd = $(`<div id="html_7c64b80d5885d5ba73a589a6cb81c5fd" style="width: 100.0%; height: 100.0%;">Kerala: Less Prone</div>`)[0];
+                popup_359a72405567d18d290ef054dcd3aa5d.setContent(html_7c64b80d5885d5ba73a589a6cb81c5fd);
+            
+        
+
+        circle_marker_67b05ba1ac117e424910230b28c3af79.bindPopup(popup_359a72405567d18d290ef054dcd3aa5d)
+        ;
+
+        
+    
+    
+            var circle_marker_7aa75919d0e75b87755970313eb88dc0 = L.circleMarker(
+                [10.1869, 72.2217],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_164698e16fd42b3ff14389335bc19ec5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc2955de3f0fb234f40f4c02a710f536 = $(`<div id="html_fc2955de3f0fb234f40f4c02a710f536" style="width: 100.0%; height: 100.0%;">Lakshadweep: Less Prone</div>`)[0];
+                popup_164698e16fd42b3ff14389335bc19ec5.setContent(html_fc2955de3f0fb234f40f4c02a710f536);
+            
+        
+
+        circle_marker_7aa75919d0e75b87755970313eb88dc0.bindPopup(popup_164698e16fd42b3ff14389335bc19ec5)
+        ;
+
+        
+    
+    
+            var circle_marker_b13fd6cb0411413da8bf425c632f7362 = L.circleMarker(
+                [23.4737, 77.9475],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_7f111675dd9bc985f5fc3a73c01ad0e7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1ce166fcf2e7f2ede3998af7aa43c0a4 = $(`<div id="html_1ce166fcf2e7f2ede3998af7aa43c0a4" style="width: 100.0%; height: 100.0%;">Madhya Pradesh: Highly Prone</div>`)[0];
+                popup_7f111675dd9bc985f5fc3a73c01ad0e7.setContent(html_1ce166fcf2e7f2ede3998af7aa43c0a4);
+            
+        
+
+        circle_marker_b13fd6cb0411413da8bf425c632f7362.bindPopup(popup_7f111675dd9bc985f5fc3a73c01ad0e7)
+        ;
+
+        
+    
+    
+            var circle_marker_e19a6b629720eec683cd9c2b3871b881 = L.circleMarker(
+                [19.7515, 75.7139],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_cdf034dd28a2a6f9c2fa3b950a1ee9e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_062dd6bdb7ed976ad798ac9098461235 = $(`<div id="html_062dd6bdb7ed976ad798ac9098461235" style="width: 100.0%; height: 100.0%;">Maharashtra: Highly Prone</div>`)[0];
+                popup_cdf034dd28a2a6f9c2fa3b950a1ee9e2.setContent(html_062dd6bdb7ed976ad798ac9098461235);
+            
+        
+
+        circle_marker_e19a6b629720eec683cd9c2b3871b881.bindPopup(popup_cdf034dd28a2a6f9c2fa3b950a1ee9e2)
+        ;
+
+        
+    
+    
+            var circle_marker_b9fbe5f2525b038f2f982241104812a0 = L.circleMarker(
+                [24.6637, 93.9063],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_465f8725caa416f4cc0342d4b1fe141d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9f3e99c5208fcf40c3dcc1602d8e77ba = $(`<div id="html_9f3e99c5208fcf40c3dcc1602d8e77ba" style="width: 100.0%; height: 100.0%;">Manipur: Highly Prone</div>`)[0];
+                popup_465f8725caa416f4cc0342d4b1fe141d.setContent(html_9f3e99c5208fcf40c3dcc1602d8e77ba);
+            
+        
+
+        circle_marker_b9fbe5f2525b038f2f982241104812a0.bindPopup(popup_465f8725caa416f4cc0342d4b1fe141d)
+        ;
+
+        
+    
+    
+            var circle_marker_b2bb043589832717827d45508395cf55 = L.circleMarker(
+                [25.5788, 91.8838],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_982a76370231f3ad211374d87df74e45 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17e303fa199098b900a5fbab03afbe81 = $(`<div id="html_17e303fa199098b900a5fbab03afbe81" style="width: 100.0%; height: 100.0%;">Meghalaya: Medium Prone</div>`)[0];
+                popup_982a76370231f3ad211374d87df74e45.setContent(html_17e303fa199098b900a5fbab03afbe81);
+            
+        
+
+        circle_marker_b2bb043589832717827d45508395cf55.bindPopup(popup_982a76370231f3ad211374d87df74e45)
+        ;
+
+        
+    
+    
+            var circle_marker_83c3e31917f6c5df8912876d4eeb7191 = L.circleMarker(
+                [23.1645, 92.9376],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_6f0432fd44c6af72cc5be3b1e009b65d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70fbdb688ce6dd650cee3a588b534d48 = $(`<div id="html_70fbdb688ce6dd650cee3a588b534d48" style="width: 100.0%; height: 100.0%;">Mizoram: Highly Prone</div>`)[0];
+                popup_6f0432fd44c6af72cc5be3b1e009b65d.setContent(html_70fbdb688ce6dd650cee3a588b534d48);
+            
+        
+
+        circle_marker_83c3e31917f6c5df8912876d4eeb7191.bindPopup(popup_6f0432fd44c6af72cc5be3b1e009b65d)
+        ;
+
+        
+    
+    
+            var circle_marker_4764b06ae7ee28d64112f6394bdc959e = L.circleMarker(
+                [26.1584, 94.5624],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_c4f9820424190892d4b9105aba6869f7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3f00a37adb4810ad1ec2dd0c52f58ed = $(`<div id="html_a3f00a37adb4810ad1ec2dd0c52f58ed" style="width: 100.0%; height: 100.0%;">Nagaland: Medium Prone</div>`)[0];
+                popup_c4f9820424190892d4b9105aba6869f7.setContent(html_a3f00a37adb4810ad1ec2dd0c52f58ed);
+            
+        
+
+        circle_marker_4764b06ae7ee28d64112f6394bdc959e.bindPopup(popup_c4f9820424190892d4b9105aba6869f7)
+        ;
+
+        
+    
+    
+            var circle_marker_a1b359e9c4d2a13285ff4702323b9ff5 = L.circleMarker(
+                [20.9517, 85.0985],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_e9ecea83d90732b72a595c30cd6b2510 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_40a634dc2bf67041f419b16c283ef669 = $(`<div id="html_40a634dc2bf67041f419b16c283ef669" style="width: 100.0%; height: 100.0%;">Odisha: Less Prone</div>`)[0];
+                popup_e9ecea83d90732b72a595c30cd6b2510.setContent(html_40a634dc2bf67041f419b16c283ef669);
+            
+        
+
+        circle_marker_a1b359e9c4d2a13285ff4702323b9ff5.bindPopup(popup_e9ecea83d90732b72a595c30cd6b2510)
+        ;
+
+        
+    
+    
+            var circle_marker_8b9823a8f51df596901e8207a661e017 = L.circleMarker(
+                [11.9416, 79.8083],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_6b40d7a6f4fc810ace960ad8ce692627 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a273743377ddb75b1b456516745d94d2 = $(`<div id="html_a273743377ddb75b1b456516745d94d2" style="width: 100.0%; height: 100.0%;">Puducherry: Less Prone</div>`)[0];
+                popup_6b40d7a6f4fc810ace960ad8ce692627.setContent(html_a273743377ddb75b1b456516745d94d2);
+            
+        
+
+        circle_marker_8b9823a8f51df596901e8207a661e017.bindPopup(popup_6b40d7a6f4fc810ace960ad8ce692627)
+        ;
+
+        
+    
+    
+            var circle_marker_71264a11d591ae2ee78ee2efcfaa2f57 = L.circleMarker(
+                [31.1471, 75.3412],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_227a76da6430832b1ee9fa196a1e243b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c6f908aaef2137f19c232284ae119956 = $(`<div id="html_c6f908aaef2137f19c232284ae119956" style="width: 100.0%; height: 100.0%;">Punjab: Less Prone</div>`)[0];
+                popup_227a76da6430832b1ee9fa196a1e243b.setContent(html_c6f908aaef2137f19c232284ae119956);
+            
+        
+
+        circle_marker_71264a11d591ae2ee78ee2efcfaa2f57.bindPopup(popup_227a76da6430832b1ee9fa196a1e243b)
+        ;
+
+        
+    
+    
+            var circle_marker_1e3f9912679f7dd78bd879f3034b8be4 = L.circleMarker(
+                [27.0238, 74.2179],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_ce519eef8d0ec681dbcce53fc2c6e85f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1c8fce21d6d8cbda7e5c499a547a7f2 = $(`<div id="html_c1c8fce21d6d8cbda7e5c499a547a7f2" style="width: 100.0%; height: 100.0%;">Rajasthan: Less Prone</div>`)[0];
+                popup_ce519eef8d0ec681dbcce53fc2c6e85f.setContent(html_c1c8fce21d6d8cbda7e5c499a547a7f2);
+            
+        
+
+        circle_marker_1e3f9912679f7dd78bd879f3034b8be4.bindPopup(popup_ce519eef8d0ec681dbcce53fc2c6e85f)
+        ;
+
+        
+    
+    
+            var circle_marker_58dc29093977705261e61c2016430e11 = L.circleMarker(
+                [27.533, 88.6133],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_e705b4d0608d88bfb4447f1c68159db4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4150558ccc01d17368fce0d7d2a21f5 = $(`<div id="html_f4150558ccc01d17368fce0d7d2a21f5" style="width: 100.0%; height: 100.0%;">Sikkim: Less Prone</div>`)[0];
+                popup_e705b4d0608d88bfb4447f1c68159db4.setContent(html_f4150558ccc01d17368fce0d7d2a21f5);
+            
+        
+
+        circle_marker_58dc29093977705261e61c2016430e11.bindPopup(popup_e705b4d0608d88bfb4447f1c68159db4)
+        ;
+
+        
+    
+    
+            var circle_marker_02f1905677334c3c3ddddbbae6c99648 = L.circleMarker(
+                [11.1271, 78.6569],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_ace54654a132d9ef437cb2643e8b5b87 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba340d1211c58cc354b28c037a3dfaa2 = $(`<div id="html_ba340d1211c58cc354b28c037a3dfaa2" style="width: 100.0%; height: 100.0%;">Tamil Nadu: Less Prone</div>`)[0];
+                popup_ace54654a132d9ef437cb2643e8b5b87.setContent(html_ba340d1211c58cc354b28c037a3dfaa2);
+            
+        
+
+        circle_marker_02f1905677334c3c3ddddbbae6c99648.bindPopup(popup_ace54654a132d9ef437cb2643e8b5b87)
+        ;
+
+        
+    
+    
+            var circle_marker_975064098b53380d4c3feac972d74749 = L.circleMarker(
+                [17.1232, 79.2088],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_393d258322912ddfe5ea314035151121 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7e755baa2c3f6fda5ea752928abdd894 = $(`<div id="html_7e755baa2c3f6fda5ea752928abdd894" style="width: 100.0%; height: 100.0%;">Telangana: Medium Prone</div>`)[0];
+                popup_393d258322912ddfe5ea314035151121.setContent(html_7e755baa2c3f6fda5ea752928abdd894);
+            
+        
+
+        circle_marker_975064098b53380d4c3feac972d74749.bindPopup(popup_393d258322912ddfe5ea314035151121)
+        ;
+
+        
+    
+    
+            var circle_marker_f81d785aa325763870b5005290673301 = L.circleMarker(
+                [23.9408, 91.9882],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_0e4e80f38cdd9426b4b485e0a8781009 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d3e490db3e2d156c2c7c7c5085ad817 = $(`<div id="html_1d3e490db3e2d156c2c7c7c5085ad817" style="width: 100.0%; height: 100.0%;">Tripura: Medium Prone</div>`)[0];
+                popup_0e4e80f38cdd9426b4b485e0a8781009.setContent(html_1d3e490db3e2d156c2c7c7c5085ad817);
+            
+        
+
+        circle_marker_f81d785aa325763870b5005290673301.bindPopup(popup_0e4e80f38cdd9426b4b485e0a8781009)
+        ;
+
+        
+    
+    
+            var circle_marker_66076c8abf96f3f1d7fc6faacf2a12a7 = L.circleMarker(
+                [26.8467, 80.9462],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_19a6e4c6e4d0fd491c708fb24f56f100 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1c7296fcba25edf3edd1241d27c3e0e = $(`<div id="html_f1c7296fcba25edf3edd1241d27c3e0e" style="width: 100.0%; height: 100.0%;">Uttar Pradesh: Medium Prone</div>`)[0];
+                popup_19a6e4c6e4d0fd491c708fb24f56f100.setContent(html_f1c7296fcba25edf3edd1241d27c3e0e);
+            
+        
+
+        circle_marker_66076c8abf96f3f1d7fc6faacf2a12a7.bindPopup(popup_19a6e4c6e4d0fd491c708fb24f56f100)
+        ;
+
+        
+    
+    
+            var circle_marker_826a2b125b086f9056c75dc7584584ac = L.circleMarker(
+                [30.0668, 79.0193],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_d5873d69a854ebfda7d73ad9ec2f5862 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3bd9ac03095e694afe768d130b9d928c = $(`<div id="html_3bd9ac03095e694afe768d130b9d928c" style="width: 100.0%; height: 100.0%;">Uttarakhand: Less Prone</div>`)[0];
+                popup_d5873d69a854ebfda7d73ad9ec2f5862.setContent(html_3bd9ac03095e694afe768d130b9d928c);
+            
+        
+
+        circle_marker_826a2b125b086f9056c75dc7584584ac.bindPopup(popup_d5873d69a854ebfda7d73ad9ec2f5862)
+        ;
+
+        
+    
+    
+            var circle_marker_e303be524cab5188af6a41189a508759 = L.circleMarker(
+                [22.9868, 87.855],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_d2d5c1fdcf295da1e64a1be081158c73);
+        
+    
+        var popup_03bcf3b3844479176ff057d33c4df6c4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c0414d2c262b0bda63f47d14f783134c = $(`<div id="html_c0414d2c262b0bda63f47d14f783134c" style="width: 100.0%; height: 100.0%;">West Bengal: Less Prone</div>`)[0];
+                popup_03bcf3b3844479176ff057d33c4df6c4.setContent(html_c0414d2c262b0bda63f47d14f783134c);
+            
+        
+
+        circle_marker_e303be524cab5188af6a41189a508759.bindPopup(popup_03bcf3b3844479176ff057d33c4df6c4)
+        ;
+
+        
+    
+</script>
+</html>

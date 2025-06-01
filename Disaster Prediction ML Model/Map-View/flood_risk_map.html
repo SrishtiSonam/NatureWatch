@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e12cac934a8dfee4cebb55c1b44c5c7c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e12cac934a8dfee4cebb55c1b44c5c7c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e12cac934a8dfee4cebb55c1b44c5c7c = L.map(
+                "map_e12cac934a8dfee4cebb55c1b44c5c7c",
+                {
+                    center: [20.5937, 78.9629],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_202c47b169935ad2e0e1073999a1106c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_202c47b169935ad2e0e1073999a1106c.addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+            var circle_marker_254a755403d67f0e96a4e592641b51e7 = L.circleMarker(
+                [19.076, 72.8777],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_4332966b71b848ae2d3c7ee19a8f1f90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b72a00b89a29326347dde9fdd6ffc9cd = $(`<div id="html_b72a00b89a29326347dde9fdd6ffc9cd" style="width: 100.0%; height: 100.0%;">Mumbai (Maharashtra): Medium - Predicted Risk Score: 0.50</div>`)[0];
+                popup_4332966b71b848ae2d3c7ee19a8f1f90.setContent(html_b72a00b89a29326347dde9fdd6ffc9cd);
+            
+        
+
+        circle_marker_254a755403d67f0e96a4e592641b51e7.bindPopup(popup_4332966b71b848ae2d3c7ee19a8f1f90)
+        ;
+
+        
+    
+    
+            var circle_marker_e3ad781f76118abe7a7d52f5ddf294c1 = L.circleMarker(
+                [28.6139, 77.209],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_8bf6a21afb39dc99c61aaaa759e483bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f87b721de494eaefff7933382b85c89 = $(`<div id="html_0f87b721de494eaefff7933382b85c89" style="width: 100.0%; height: 100.0%;">Delhi (Delhi): Low - Predicted Risk Score: 0.35</div>`)[0];
+                popup_8bf6a21afb39dc99c61aaaa759e483bf.setContent(html_0f87b721de494eaefff7933382b85c89);
+            
+        
+
+        circle_marker_e3ad781f76118abe7a7d52f5ddf294c1.bindPopup(popup_8bf6a21afb39dc99c61aaaa759e483bf)
+        ;
+
+        
+    
+    
+            var circle_marker_5f9d6e2c85c4b3c6a8f33cebcb12cbfe = L.circleMarker(
+                [22.5726, 88.3639],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_dd5ed44d0b01b73c1a593b7244ce6f44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50293513162ef5ba2df035249d37aa42 = $(`<div id="html_50293513162ef5ba2df035249d37aa42" style="width: 100.0%; height: 100.0%;">Kolkata (West Bengal): Low - Predicted Risk Score: 0.46</div>`)[0];
+                popup_dd5ed44d0b01b73c1a593b7244ce6f44.setContent(html_50293513162ef5ba2df035249d37aa42);
+            
+        
+
+        circle_marker_5f9d6e2c85c4b3c6a8f33cebcb12cbfe.bindPopup(popup_dd5ed44d0b01b73c1a593b7244ce6f44)
+        ;
+
+        
+    
+    
+            var circle_marker_e6337359890e44a47bd71fda47c6811b = L.circleMarker(
+                [12.9716, 77.5946],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_53800b13459882e3ba44550d9aa3d2c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7589681d46fc7e29000de9b61ab2f6c = $(`<div id="html_c7589681d46fc7e29000de9b61ab2f6c" style="width: 100.0%; height: 100.0%;">Bangalore (Karnataka): Low - Predicted Risk Score: 0.47</div>`)[0];
+                popup_53800b13459882e3ba44550d9aa3d2c1.setContent(html_c7589681d46fc7e29000de9b61ab2f6c);
+            
+        
+
+        circle_marker_e6337359890e44a47bd71fda47c6811b.bindPopup(popup_53800b13459882e3ba44550d9aa3d2c1)
+        ;
+
+        
+    
+    
+            var circle_marker_f5bbba3c01d50e02da531bfea25d4e17 = L.circleMarker(
+                [13.0827, 80.2707],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_f89153ed4a37a7e6930126c76bff6006 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eefb4874e321a0953177a779508bd8c6 = $(`<div id="html_eefb4874e321a0953177a779508bd8c6" style="width: 100.0%; height: 100.0%;">Chennai (Tamil Nadu): Low - Predicted Risk Score: 0.38</div>`)[0];
+                popup_f89153ed4a37a7e6930126c76bff6006.setContent(html_eefb4874e321a0953177a779508bd8c6);
+            
+        
+
+        circle_marker_f5bbba3c01d50e02da531bfea25d4e17.bindPopup(popup_f89153ed4a37a7e6930126c76bff6006)
+        ;
+
+        
+    
+    
+            var circle_marker_f7bb4e10baf5cb1cdd68abb1b9589ed6 = L.circleMarker(
+                [17.385, 78.4867],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_228af0abed14666bfdfa3e1d29486f63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d0dd706558534dade926e42e7a7d079 = $(`<div id="html_5d0dd706558534dade926e42e7a7d079" style="width: 100.0%; height: 100.0%;">Hyderabad (Telangana): Low - Predicted Risk Score: 0.20</div>`)[0];
+                popup_228af0abed14666bfdfa3e1d29486f63.setContent(html_5d0dd706558534dade926e42e7a7d079);
+            
+        
+
+        circle_marker_f7bb4e10baf5cb1cdd68abb1b9589ed6.bindPopup(popup_228af0abed14666bfdfa3e1d29486f63)
+        ;
+
+        
+    
+    
+            var circle_marker_229095a0c38adb7c36c84a5ce5d6515a = L.circleMarker(
+                [23.0225, 72.5714],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_48f76479b28a62f62c8e0958032684e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9092c63542a7d8c222a308730f1207a5 = $(`<div id="html_9092c63542a7d8c222a308730f1207a5" style="width: 100.0%; height: 100.0%;">Ahmedabad (Gujarat): Low - Predicted Risk Score: 0.26</div>`)[0];
+                popup_48f76479b28a62f62c8e0958032684e2.setContent(html_9092c63542a7d8c222a308730f1207a5);
+            
+        
+
+        circle_marker_229095a0c38adb7c36c84a5ce5d6515a.bindPopup(popup_48f76479b28a62f62c8e0958032684e2)
+        ;
+
+        
+    
+    
+            var circle_marker_c33a264b57006a27690468cc474f4d6e = L.circleMarker(
+                [18.5204, 73.8567],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_c3474eea05a52a0d510687992f16e8ed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8ae17c67aebf24371843ff95f8bfefd7 = $(`<div id="html_8ae17c67aebf24371843ff95f8bfefd7" style="width: 100.0%; height: 100.0%;">Pune (Maharashtra): Low - Predicted Risk Score: 0.16</div>`)[0];
+                popup_c3474eea05a52a0d510687992f16e8ed.setContent(html_8ae17c67aebf24371843ff95f8bfefd7);
+            
+        
+
+        circle_marker_c33a264b57006a27690468cc474f4d6e.bindPopup(popup_c3474eea05a52a0d510687992f16e8ed)
+        ;
+
+        
+    
+    
+            var circle_marker_23e68bfb6338e0dc49a2ae075aae63e6 = L.circleMarker(
+                [21.1702, 72.8311],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_d6d842a3aa812ec7ad5ddea6350799ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_769b70b02edf7cf7bd910895aad758a7 = $(`<div id="html_769b70b02edf7cf7bd910895aad758a7" style="width: 100.0%; height: 100.0%;">Surat (Gujarat): Low - Predicted Risk Score: 0.39</div>`)[0];
+                popup_d6d842a3aa812ec7ad5ddea6350799ec.setContent(html_769b70b02edf7cf7bd910895aad758a7);
+            
+        
+
+        circle_marker_23e68bfb6338e0dc49a2ae075aae63e6.bindPopup(popup_d6d842a3aa812ec7ad5ddea6350799ec)
+        ;
+
+        
+    
+    
+            var circle_marker_ec5eb68718ea6e5526dba0862986335d = L.circleMarker(
+                [26.9124, 75.7873],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_d108e12b0de425afb033926b6b1d46ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98b9d8bf4b90da9e7f4138594a28bafc = $(`<div id="html_98b9d8bf4b90da9e7f4138594a28bafc" style="width: 100.0%; height: 100.0%;">Jaipur (Rajasthan): Low - Predicted Risk Score: 0.22</div>`)[0];
+                popup_d108e12b0de425afb033926b6b1d46ff.setContent(html_98b9d8bf4b90da9e7f4138594a28bafc);
+            
+        
+
+        circle_marker_ec5eb68718ea6e5526dba0862986335d.bindPopup(popup_d108e12b0de425afb033926b6b1d46ff)
+        ;
+
+        
+    
+    
+            var circle_marker_b1bc1e9dd6554671c60f5c60a4af1e1f = L.circleMarker(
+                [26.8467, 80.9462],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_9db73ce684f72c29a690630d7702897a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42ead1edebfb3f64364bafc28a121994 = $(`<div id="html_42ead1edebfb3f64364bafc28a121994" style="width: 100.0%; height: 100.0%;">Lucknow (Uttar Pradesh): Low - Predicted Risk Score: 0.42</div>`)[0];
+                popup_9db73ce684f72c29a690630d7702897a.setContent(html_42ead1edebfb3f64364bafc28a121994);
+            
+        
+
+        circle_marker_b1bc1e9dd6554671c60f5c60a4af1e1f.bindPopup(popup_9db73ce684f72c29a690630d7702897a)
+        ;
+
+        
+    
+    
+            var circle_marker_0960f2c4d370f56fc98ef4c807e0902f = L.circleMarker(
+                [26.4499, 80.3319],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_323d724df51dd079567c25b94b9c4d2a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_48897bcfe0e0bd6c4ab2e5366e799ab1 = $(`<div id="html_48897bcfe0e0bd6c4ab2e5366e799ab1" style="width: 100.0%; height: 100.0%;">Kanpur (Uttar Pradesh): Medium - Predicted Risk Score: 0.51</div>`)[0];
+                popup_323d724df51dd079567c25b94b9c4d2a.setContent(html_48897bcfe0e0bd6c4ab2e5366e799ab1);
+            
+        
+
+        circle_marker_0960f2c4d370f56fc98ef4c807e0902f.bindPopup(popup_323d724df51dd079567c25b94b9c4d2a)
+        ;
+
+        
+    
+    
+            var circle_marker_2662e2f8783bd5d6323cfe49c469f508 = L.circleMarker(
+                [21.1458, 79.0882],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_73e562fc10204eb2dabc2f84b7fbc2df = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dda5ef3e06b0c770ac102aab67e8c06f = $(`<div id="html_dda5ef3e06b0c770ac102aab67e8c06f" style="width: 100.0%; height: 100.0%;">Nagpur (Maharashtra): Low - Predicted Risk Score: 0.18</div>`)[0];
+                popup_73e562fc10204eb2dabc2f84b7fbc2df.setContent(html_dda5ef3e06b0c770ac102aab67e8c06f);
+            
+        
+
+        circle_marker_2662e2f8783bd5d6323cfe49c469f508.bindPopup(popup_73e562fc10204eb2dabc2f84b7fbc2df)
+        ;
+
+        
+    
+    
+            var circle_marker_896b74b53e5dfd881f74059b6592f5a9 = L.circleMarker(
+                [22.7196, 75.8577],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_e0b1771aaea2400f657aa07886f78341 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6461a8c9a4bec7bcf7cefae010048dd8 = $(`<div id="html_6461a8c9a4bec7bcf7cefae010048dd8" style="width: 100.0%; height: 100.0%;">Indore (Madhya Pradesh): Low - Predicted Risk Score: 0.28</div>`)[0];
+                popup_e0b1771aaea2400f657aa07886f78341.setContent(html_6461a8c9a4bec7bcf7cefae010048dd8);
+            
+        
+
+        circle_marker_896b74b53e5dfd881f74059b6592f5a9.bindPopup(popup_e0b1771aaea2400f657aa07886f78341)
+        ;
+
+        
+    
+    
+            var circle_marker_b9efc4b4ebc3693a0e041df34ef128f4 = L.circleMarker(
+                [22.3072, 73.1812],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_3d3e43ab23267427f768d82ba3f455d6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb88ab4368f2c96c493d4a713f1306ac = $(`<div id="html_fb88ab4368f2c96c493d4a713f1306ac" style="width: 100.0%; height: 100.0%;">Vadodara (Gujarat): Low - Predicted Risk Score: 0.39</div>`)[0];
+                popup_3d3e43ab23267427f768d82ba3f455d6.setContent(html_fb88ab4368f2c96c493d4a713f1306ac);
+            
+        
+
+        circle_marker_b9efc4b4ebc3693a0e041df34ef128f4.bindPopup(popup_3d3e43ab23267427f768d82ba3f455d6)
+        ;
+
+        
+    
+    
+            var circle_marker_4dd0aa80b48758e62b3756532d211a66 = L.circleMarker(
+                [25.5941, 85.1376],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_bd6802fa0b6fab551b8a5b9461d714b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_95444de5513dc5fe2b12f940829661dd = $(`<div id="html_95444de5513dc5fe2b12f940829661dd" style="width: 100.0%; height: 100.0%;">Patna (Bihar): Low - Predicted Risk Score: 0.46</div>`)[0];
+                popup_bd6802fa0b6fab551b8a5b9461d714b4.setContent(html_95444de5513dc5fe2b12f940829661dd);
+            
+        
+
+        circle_marker_4dd0aa80b48758e62b3756532d211a66.bindPopup(popup_bd6802fa0b6fab551b8a5b9461d714b4)
+        ;
+
+        
+    
+    
+            var circle_marker_755ce26755e489879b4938c4acca276c = L.circleMarker(
+                [23.2599, 77.4126],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_fb42943920cd26248e87abc6327bae5a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22612f5afc64e818e5716d5020a27741 = $(`<div id="html_22612f5afc64e818e5716d5020a27741" style="width: 100.0%; height: 100.0%;">Bhopal (Madhya Pradesh): Low - Predicted Risk Score: 0.23</div>`)[0];
+                popup_fb42943920cd26248e87abc6327bae5a.setContent(html_22612f5afc64e818e5716d5020a27741);
+            
+        
+
+        circle_marker_755ce26755e489879b4938c4acca276c.bindPopup(popup_fb42943920cd26248e87abc6327bae5a)
+        ;
+
+        
+    
+    
+            var circle_marker_fcc637d7f70da4b7fa649d2a0a3cef0f = L.circleMarker(
+                [23.3441, 85.3096],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_f4fefb086f915bb07864abc1f9d9fb7f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_433cd734cb4cafaa9a90b22dfc003de1 = $(`<div id="html_433cd734cb4cafaa9a90b22dfc003de1" style="width: 100.0%; height: 100.0%;">Ranchi (Jharkhand): Low - Predicted Risk Score: 0.41</div>`)[0];
+                popup_f4fefb086f915bb07864abc1f9d9fb7f.setContent(html_433cd734cb4cafaa9a90b22dfc003de1);
+            
+        
+
+        circle_marker_fcc637d7f70da4b7fa649d2a0a3cef0f.bindPopup(popup_f4fefb086f915bb07864abc1f9d9fb7f)
+        ;
+
+        
+    
+    
+            var circle_marker_b915b7ed32ce98d6b40ab1aa07aa53c8 = L.circleMarker(
+                [16.5063, 80.648],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_6566d1c8bb94f20f1de00ef39131ddb4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_21bf6d37ad5c57d32973055ef70d7f22 = $(`<div id="html_21bf6d37ad5c57d32973055ef70d7f22" style="width: 100.0%; height: 100.0%;">Vijayawada (Andhra Pradesh): Low - Predicted Risk Score: 0.41</div>`)[0];
+                popup_6566d1c8bb94f20f1de00ef39131ddb4.setContent(html_21bf6d37ad5c57d32973055ef70d7f22);
+            
+        
+
+        circle_marker_b915b7ed32ce98d6b40ab1aa07aa53c8.bindPopup(popup_6566d1c8bb94f20f1de00ef39131ddb4)
+        ;
+
+        
+    
+    
+            var circle_marker_5fdbe0d2b4c6aca4712b851ecfe5118e = L.circleMarker(
+                [11.0168, 76.9558],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_ae010a114ba7bde9c0af9c2f479ce898 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96628175f76a65cdb1551a373dc92d44 = $(`<div id="html_96628175f76a65cdb1551a373dc92d44" style="width: 100.0%; height: 100.0%;">Coimbatore (Tamil Nadu): Medium - Predicted Risk Score: 0.58</div>`)[0];
+                popup_ae010a114ba7bde9c0af9c2f479ce898.setContent(html_96628175f76a65cdb1551a373dc92d44);
+            
+        
+
+        circle_marker_5fdbe0d2b4c6aca4712b851ecfe5118e.bindPopup(popup_ae010a114ba7bde9c0af9c2f479ce898)
+        ;
+
+        
+    
+    
+            var circle_marker_655015f039411eb9d4931a99f95a8e06 = L.circleMarker(
+                [27.1767, 78.0081],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_214b2582d18b2e9a5f13d62e9fb533f8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9705456c8aa02d081983cbaf3c8e1c4 = $(`<div id="html_d9705456c8aa02d081983cbaf3c8e1c4" style="width: 100.0%; height: 100.0%;">Agra (Uttar Pradesh): Low - Predicted Risk Score: 0.42</div>`)[0];
+                popup_214b2582d18b2e9a5f13d62e9fb533f8.setContent(html_d9705456c8aa02d081983cbaf3c8e1c4);
+            
+        
+
+        circle_marker_655015f039411eb9d4931a99f95a8e06.bindPopup(popup_214b2582d18b2e9a5f13d62e9fb533f8)
+        ;
+
+        
+    
+    
+            var circle_marker_c10729d76e3a6dc2ac9b8e3ca1afb971 = L.circleMarker(
+                [19.9975, 73.7898],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_279eea8a54b41b2b043d72a3a01bacd0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8a2a0e4f34182d3b42430861311a0f1e = $(`<div id="html_8a2a0e4f34182d3b42430861311a0f1e" style="width: 100.0%; height: 100.0%;">Nashik (Maharashtra): Low - Predicted Risk Score: 0.44</div>`)[0];
+                popup_279eea8a54b41b2b043d72a3a01bacd0.setContent(html_8a2a0e4f34182d3b42430861311a0f1e);
+            
+        
+
+        circle_marker_c10729d76e3a6dc2ac9b8e3ca1afb971.bindPopup(popup_279eea8a54b41b2b043d72a3a01bacd0)
+        ;
+
+        
+    
+    
+            var circle_marker_e76f61699d6f3eec8eac76d4e8c51983 = L.circleMarker(
+                [26.2389, 73.0243],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_5008be4ed822adb45a03f46285d592b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d99dbc4307a5a25438ca6f6f81657b52 = $(`<div id="html_d99dbc4307a5a25438ca6f6f81657b52" style="width: 100.0%; height: 100.0%;">Jodhpur (Rajasthan): Low - Predicted Risk Score: 0.27</div>`)[0];
+                popup_5008be4ed822adb45a03f46285d592b6.setContent(html_d99dbc4307a5a25438ca6f6f81657b52);
+            
+        
+
+        circle_marker_e76f61699d6f3eec8eac76d4e8c51983.bindPopup(popup_5008be4ed822adb45a03f46285d592b6)
+        ;
+
+        
+    
+    
+            var circle_marker_60742b90778a2b1a8cd740c25408adc0 = L.circleMarker(
+                [26.1445, 91.7362],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_e4c9569839209797f957ee65dc8acf1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4cfaae78ca9c9fccb5761b28db08596 = $(`<div id="html_b4cfaae78ca9c9fccb5761b28db08596" style="width: 100.0%; height: 100.0%;">Guwahati (Assam): Low - Predicted Risk Score: 0.35</div>`)[0];
+                popup_e4c9569839209797f957ee65dc8acf1d.setContent(html_b4cfaae78ca9c9fccb5761b28db08596);
+            
+        
+
+        circle_marker_60742b90778a2b1a8cd740c25408adc0.bindPopup(popup_e4c9569839209797f957ee65dc8acf1d)
+        ;
+
+        
+    
+    
+            var circle_marker_cc51f256e8a3dcafa0886bf3f3001968 = L.circleMarker(
+                [25.5788, 91.883],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_7e4fb439c4fd8693c12a7a87b626bfa2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b01d9921e23c512ebf41f926aaa369a6 = $(`<div id="html_b01d9921e23c512ebf41f926aaa369a6" style="width: 100.0%; height: 100.0%;">Shillong (Meghalaya): Medium - Predicted Risk Score: 0.53</div>`)[0];
+                popup_7e4fb439c4fd8693c12a7a87b626bfa2.setContent(html_b01d9921e23c512ebf41f926aaa369a6);
+            
+        
+
+        circle_marker_cc51f256e8a3dcafa0886bf3f3001968.bindPopup(popup_7e4fb439c4fd8693c12a7a87b626bfa2)
+        ;
+
+        
+    
+    
+            var circle_marker_dac636a5a3902f80dac9231f5db3a7a8 = L.circleMarker(
+                [10.7905, 78.7047],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_f18bed7f6be95b082990774e43409565 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de223875b34c8894527b72cde56877ff = $(`<div id="html_de223875b34c8894527b72cde56877ff" style="width: 100.0%; height: 100.0%;">Tiruchirappalli (Tamil Nadu): Low - Predicted Risk Score: 0.26</div>`)[0];
+                popup_f18bed7f6be95b082990774e43409565.setContent(html_de223875b34c8894527b72cde56877ff);
+            
+        
+
+        circle_marker_dac636a5a3902f80dac9231f5db3a7a8.bindPopup(popup_f18bed7f6be95b082990774e43409565)
+        ;
+
+        
+    
+    
+            var circle_marker_994b5b067d2950855259686f90ff2756 = L.circleMarker(
+                [23.8315, 91.2868],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_fed1dd6368a3e00111f0c63f83a6361c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7c195eb6a6574afc8d93ad81ca8eeb75 = $(`<div id="html_7c195eb6a6574afc8d93ad81ca8eeb75" style="width: 100.0%; height: 100.0%;">Agartala (Tripura): Low - Predicted Risk Score: 0.19</div>`)[0];
+                popup_fed1dd6368a3e00111f0c63f83a6361c.setContent(html_7c195eb6a6574afc8d93ad81ca8eeb75);
+            
+        
+
+        circle_marker_994b5b067d2950855259686f90ff2756.bindPopup(popup_fed1dd6368a3e00111f0c63f83a6361c)
+        ;
+
+        
+    
+    
+            var circle_marker_8ef80ce7f9fc998ec2509677ecd470f9 = L.circleMarker(
+                [24.8178, 93.9368],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_47d9687c9d330d67c53585e385f95990 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dd9070c833f9dfe76b3f909f3e23ede4 = $(`<div id="html_dd9070c833f9dfe76b3f909f3e23ede4" style="width: 100.0%; height: 100.0%;">Imphal (Manipur): Medium - Predicted Risk Score: 0.53</div>`)[0];
+                popup_47d9687c9d330d67c53585e385f95990.setContent(html_dd9070c833f9dfe76b3f909f3e23ede4);
+            
+        
+
+        circle_marker_8ef80ce7f9fc998ec2509677ecd470f9.bindPopup(popup_47d9687c9d330d67c53585e385f95990)
+        ;
+
+        
+    
+    
+            var circle_marker_60b4a620babfc8d355bd64c0363bb5fd = L.circleMarker(
+                [30.3165, 78.0322],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_64e241ac53bfd68846d5e96b4ce4544e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68f9787c45718e0014274d8742ff540e = $(`<div id="html_68f9787c45718e0014274d8742ff540e" style="width: 100.0%; height: 100.0%;">Dehradun (Uttarakhand): Low - Predicted Risk Score: 0.28</div>`)[0];
+                popup_64e241ac53bfd68846d5e96b4ce4544e.setContent(html_68f9787c45718e0014274d8742ff540e);
+            
+        
+
+        circle_marker_60b4a620babfc8d355bd64c0363bb5fd.bindPopup(popup_64e241ac53bfd68846d5e96b4ce4544e)
+        ;
+
+        
+    
+    
+            var circle_marker_abeddb8fce1f61b556f7f57ff6d60cbb = L.circleMarker(
+                [29.0192, 79.2985],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 3}
+            ).addTo(map_e12cac934a8dfee4cebb55c1b44c5c7c);
+        
+    
+        var popup_7db8a64663b815e5b8286d82a0a6b1b1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1a36c17834eb661b468e2d0bd29eaaab = $(`<div id="html_1a36c17834eb661b468e2d0bd29eaaab" style="width: 100.0%; height: 100.0%;">Rudrapur (Uttarakhand): Low - Predicted Risk Score: 0.24</div>`)[0];
+                popup_7db8a64663b815e5b8286d82a0a6b1b1.setContent(html_1a36c17834eb661b468e2d0bd29eaaab);
+            
+        
+
+        circle_marker_abeddb8fce1f61b556f7f57ff6d60cbb.bindPopup(popup_7db8a64663b815e5b8286d82a0a6b1b1)
+        ;
+
+        
+    
+</script>
+</html>
