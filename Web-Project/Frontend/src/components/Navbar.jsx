@@ -18,13 +18,8 @@ const Navbar = () => {
   return (
     <nav className="fixed w-full top-0 left-0 z-50 bg-[#1e181a] shadow-md">
       <div className="px-6 md:px-16 flex justify-between items-center h-20">
-        <div className="flex items-center">
-          <img
-            src={logo}
-            alt="Predict"
-            className="w-36 md:w-48"
-            style={{ maxWidth: "100%", height: "auto" }}
-          />
+        <div className="block transform -rotate-6 bg-gray-200 p-2 rounded shadow-lg font-bold text-2xl text-gray-800">
+          NatureWatch
         </div>
 
         {/* Desktop Menu */}
@@ -37,7 +32,7 @@ const Navbar = () => {
               </li>
             </Link>
 
-            {/* About Us with Submenu */}
+            {/* About Us with Submenu
             <li className="relative">
               <button
                 onClick={toggleAboutMenu}
@@ -73,7 +68,7 @@ const Navbar = () => {
                   </Link>
                 </ul>
               )}
-            </li>
+            </li> */}
 
             <Link to="/About">
               <li className="relative block px-3 py-2 group cursor-pointer">

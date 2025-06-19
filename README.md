@@ -1,5 +1,16 @@
 # Nature Watch 🌍🔍
 
+
+## Screenshots
+### 🌍 Home Page
+
+
+### 📊 Disaster Prediction Dashboard
+
+
+### 🔍 Prediction Results
+
+
 ## Overview
 This project aims to predict natural disasters such as **earthquakes, floods, and forest fires** using **Machine Learning**. It features a **clean and intuitive UI** built with **React.js & Tailwind CSS**, while the backend is powered by **Flask** for efficient data processing and predictions.
 
@@ -59,19 +70,10 @@ python app.py
 ```bash
 cd frontend
 npm install
-npm start
+npm run dev
 ```
 
 ---
-
-## Screenshots
-### 🌍 Home Page
-
-
-### 📊 Disaster Prediction Dashboard
-
-
-### 🔍 Prediction Results
 
 
 ---
