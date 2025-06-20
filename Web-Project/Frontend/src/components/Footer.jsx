@@ -81,11 +81,6 @@ const Footer = () => {
                   Data Analytics
                 </a>
               </p>
-              <p>
-                <a className="text-gray-500/80 hover:text-[#1e181a]" href="#">
-                  Live Monitoring
-                </a>
-              </p>
             </div>
             <div className="flex flex-col items-center leading-7">
               <h1 className="text-[#1e181a] text-lg font-semibold">
@@ -136,7 +131,7 @@ const Footer = () => {
               </h1>
               <p>
                 <a className="text-gray-500/80 hover:text-[#1e181a]" href="#">
-                  support@disasterpredict.com
+                  contact@NatureWatch.com
                 </a>
               </p>
               <p>
@@ -147,7 +142,7 @@ const Footer = () => {
             </div>
           </div>
           <hr className="mt-2 md:invisible" />
-          <div className="flex flex-col items-center m-5 md:flex-row md:justify-between md:mx-28">
+          <div className="flex flex-col items-center mx-auto mb-5">
             <div className="mt-4 text-gray-500 font-semibold">
               <a className="hover:text-[#1e181a] tracking-wide" href="#">
                 About Us

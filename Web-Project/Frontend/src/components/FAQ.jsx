@@ -23,38 +23,39 @@ const FAQ = () => {
     }
   }, [activeIndex]);
 
-  const faqs = [
-    {
-      question: "What is Predict and how does it work?",
-      answer:
-        "Predict is an advanced disaster prediction platform that uses machine learning algorithms to predict natural disasters such as earthquakes, floods, and wildfires based on historical data, geographic parameters, and real-time inputs.",
-    },
-    {
-      question: "What data do I need to input for disaster predictions?",
-      answer:
-        "For accurate disaster predictions, you need to provide location-specific data such as coordinates (latitude and longitude), depth (for earthquakes), and other relevant environmental parameters. This data helps our algorithms analyze the risk levels in your area.",
-    },
-    {
-      question: "How accurate are the predictions?",
-      answer:
-        "While Predict uses sophisticated algorithms and data models to provide high-accuracy predictions, it is important to note that natural disasters are inherently unpredictable. Our predictions offer estimated risk levels based on available data and trends.",
-    },
-    {
-      question: "Can I trust the risk levels provided by Predict?",
-      answer:
-        "The risk levels provided by Predict are based on advanced statistical models and scientific research. However, these should be considered as part of a broader disaster preparedness strategy and not as absolute predictions. Always follow official safety guidelines.",
-    },
-    {
-      question: "How can I stay updated on disaster risks in my area?",
-      answer:
-        "You can regularly check the Predict platform for updates on the predicted risk levels in your region. We also recommend subscribing to local disaster response authorities for real-time alerts and notifications.",
-    },
-    {
-      question: "Can Predict help me with disaster preparedness?",
-      answer:
-        "Yes! Predict not only provides disaster risk predictions but also offers tips and guidelines on how to prepare for different types of natural disasters, such as creating an emergency kit, evacuation plans, and safety procedures specific to your region.",
-    },
-  ];
+const faqs = [
+  {
+    question: "What exactly is NatureWatch and how does it help?",
+    answer:
+      "NatureWatch is an advanced disaster prediction platform that uses machine learning algorithms to predict natural disasters such as earthquakes, floods, and wildfires based on historical data, geographic parameters, and real-time inputs.",
+  },
+  {
+    question: "What kind of data should I provide for accurate predictions?",
+    answer:
+      "For accurate disaster predictions, you need to provide location-specific data such as coordinates (latitude and longitude), depth (for earthquakes), and other relevant environmental parameters. This data helps our algorithms analyze the risk levels in your area.",
+  },
+  {
+    question: "How reliable are NatureWatch’s disaster predictions?",
+    answer:
+      "While NatureWatch uses sophisticated algorithms and data models to provide high-accuracy predictions, it is important to note that natural disasters are inherently unpredictable. Our predictions offer estimated risk levels based on available data and trends.",
+  },
+  {
+    question: "Should I fully rely on the risk levels shown?",
+    answer:
+      "The risk levels provided by NatureWatch are based on advanced statistical models and scientific research. However, these should be considered as part of a broader disaster preparedness strategy and not as absolute predictions. Always follow official safety guidelines.",
+  },
+  {
+    question: "How can I get timely updates about disaster risks near me?",
+    answer:
+      "You can regularly check the NatureWatch platform for updates on the predicted risk levels in your region. We also recommend subscribing to local disaster response authorities for real-time alerts and notifications.",
+  },
+  {
+    question: "Does NatureWatch offer tips for staying safe during disasters?",
+    answer:
+      "Yes! NatureWatch not only provides disaster risk predictions but also offers tips and guidelines on how to prepare for different types of natural disasters, such as creating an emergency kit, evacuation plans, and safety procedures specific to your region.",
+  },
+];
+
 
   return (
     <section className="bg-white py-12 mt-16">

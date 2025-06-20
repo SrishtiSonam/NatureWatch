@@ -32,44 +32,6 @@ const Navbar = () => {
               </li>
             </Link>
 
-            {/* About Us with Submenu
-            <li className="relative">
-              <button
-                onClick={toggleAboutMenu}
-                className="relative block px-3 py-2 group flex items-center cursor-pointer"
-              >
-                <span className="relative z-10 transition-colors text-lg group-hover:text-gray-200">
-                  Disasters
-                </span>
-                <FaChevronDown
-                  className={`ml-2 text-white transition-transform ${
-                    aboutOpen ? "rotate-180" : ""
-                  }`}
-                />
-              </button>
-              {aboutOpen && (
-                <ul className="absolute bg-white rounded-xl w-72 text-gray-800 shadow-lg mt-2 py-4 px-6">
-                  <Link to="/Earth">
-                    <li className="text-gray-600 text-base transition-transform transform hover:scale-105 py-3 rounded-lg hover:bg-gray-50 cursor-pointer">
-                      EarthQuake
-                    </li>
-                  </Link>
-                  <Link to="/Flood">
-                    {" "}
-                    <li className="text-gray-600 text-base transition-transform transform hover:scale-105 py-3 rounded-lg hover:bg-gray-50 cursor-pointer">
-                      Flood
-                    </li>
-                  </Link>
-                  <Link to="/ForestFire">
-                    {" "}
-                    <li className="text-gray-600 text-base transition-transform transform hover:scale-105 py-3 rounded-lg hover:bg-gray-50 cursor-pointer">
-                      Forest Fire
-                    </li>
-                  </Link>
-                </ul>
-              )}
-            </li> */}
-
             <Link to="/About">
               <li className="relative block px-3 py-2 group cursor-pointer">
                 About Us

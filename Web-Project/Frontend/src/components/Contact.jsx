@@ -31,10 +31,10 @@ const Contact = () => {
             <div className="contact-card p-6 md:p-8 bg-white shadow-lg border border-[#1e181a] rounded-lg text-center transition-transform transform hover:-translate-y-2 hover:shadow-lg">
               <FaMapMarkerAlt className="text-[#1e181a] text-3xl md:text-4xl mx-auto mb-4" />
               <h2 className="text-xl md:text-2xl font-semibold text-gray-800">
-                Our Office
+                Our Place 
               </h2>
               <p className="text-sm md:text-base text-gray-600 mt-4">
-                BMS College Of Engineering, Bengaluru-560050
+                Jaypee University of Information Technology, Waknaghat, Solan, Himachal Pradesh, India
               </p>
             </div>
 
@@ -45,10 +45,10 @@ const Contact = () => {
               </h2>
               <p className="text-sm md:text-base text-gray-600 mt-4 break-words">
                 <a
-                  href="mailto:support@predictdisasters.com"
+                  href="mailto:contact@NatureWatch.com"
                   className="text-[#1e181a] hover:text-yellow-800 transition-colors"
                 >
-                  support@predictdisasters.com
+                  contact@NatureWatch.com
                 </a>
               </p>
             </div>
