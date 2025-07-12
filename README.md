@@ -1,111 +1,98 @@
-# Nature Watch 🌍🔍
+# Nature Watch
 
 ## Overview
-This project aims to predict natural disasters such as **earthquakes, floods, and forest fires** using **Machine Learning**. It features a **clean and intuitive UI** built with **React.js & Tailwind CSS**, while the backend is powered by **Flask** for efficient data processing and predictions.
-
-## Features
-- 📊 **Predicts earthquakes, floods, and forest fires** based on historical data.
-- 🛠️ **Machine Learning models** trained using various datasets.
-- 🌐 **Interactive web application** with an intuitive UI.
-- 🔥 **Built with React.js, Tailwind CSS (Frontend) & Flask (Backend).**
+This is a disaster prediction and preparedness platform designed to help **predict, prepare for, and protect** against natural disasters such as **earthquakes, floods, and forest fires** using **Machine Learning**. It features a **modern and intuitive UI** built with **React.js and Tailwind CSS**, while the backend is powered by **Flask** for efficient data processing and model inference.
 
 ---
 
-## Screenshots
-
-![Nature Watch Main](Screenshots/Nature%20Watch.png)
-
-### Home Page
-![Home](Screenshots/Home.png)
-![Select](Screenshots/Select.png)
-![Footer](Screenshots/Footer.png)
-
-### Disaster Prediction
-![Prediction](Screenshots/Predict.png)
-
-### About Us
-![FAQ](Screenshots/FAQ.png)
-![Our Team](Screenshots/Our%20Team.png)
-![Srishti](Screenshots/Srishti.png)
-
-### Contact Us
-![Get In Touch](Screenshots/Get%20In%20Touch.png)
+## Features
+- **Disaster Prediction:** Predicts the likelihood of earthquakes, floods, and forest fires based on historical and environmental data.
+- **Preparedness Information:** Educates users with essential steps to prepare for possible disasters.
+- **Protection Support:** Provides a channel to request and allocate help and resources effectively.
+- **ML Models:** Trained on diverse datasets with detailed exploratory data analysis (EDA).
+- **Interactive Web Application:** Clean, responsive design with real-time interactions.
+- **Tech Stack:** Built with React.js & Tailwind CSS (Frontend), Flask (Backend), and Python-based ML models.
 
 ---
 
 ## Tech Stack
-- **Frontend**: React.js, Tailwind CSS
-- **Backend**: Flask, Python
-- **ML Libraries**: Pandas, NumPy, Scikit-Learn
-- **Data Visualization**: Matplotlib, Seaborn
+
+| Layer         | Technologies Used                     |
+|---------------|----------------------------------------|
+| **Frontend**  | React.js, Tailwind CSS                 |
+| **Backend**   | Flask, Python                          |
+| **ML Libraries** | Pandas, NumPy, Scikit-learn         |
+| **Visualization** | Matplotlib, Seaborn               |
 
 ---
 
 ## Dataset & Preprocessing
-The dataset is collected from multiple sources, containing data on past disasters. The preprocessing steps include:
-1. **Exploratory Data Analysis (EDA)**
-   - Handling missing values
-   - Feature engineering
-   - Data visualization
-2. **Data Cleaning & Transformation**
-   - Normalization & scaling
-   - Encoding categorical variables
-3. **Model Training & Evaluation**
-   - Splitting dataset into training & testing
-   - Training ML models (Logistic Regression, Random Forest, Neural Networks, etc.)
-   - Evaluating model performance using accuracy, precision, recall, and F1-score
+
+Data was collected from various open data sources documenting past disaster events.
+
+### Preprocessing Steps
+1. **Exploratory Data Analysis (EDA):**
+   - Handling missing values  
+   - Feature engineering  
+   - Visual exploration of patterns  
+2. **Data Cleaning & Transformation:**
+   - Normalization and scaling  
+   - Encoding of categorical variables  
+3. **Model Training & Evaluation:**
+   - Train-test split  
+   - Model training using Logistic Regression, Random Forest, etc.  
+   - Performance metrics: Accuracy, Precision, Recall, F1-score  
 
 ---
 
 ## Model Integration
-Once the model is trained and tested, it is integrated into a Flask API to serve predictions to the web application.
-- The **Flask API** receives input data, processes it, and returns predictions.
-- The **React.js frontend** consumes the API and displays the results in an interactive manner.
+
+Once trained, ML models are served via a **Flask API**, which acts as the bridge between the frontend and the backend.
+- Frontend collects user input  
+- Sends request to Flask API  
+- API processes input through ML models  
+- Predictions are returned and visualized interactively in the UI  
 
 ---
 
 ## Installation & Setup
-### 1️⃣ Clone the Repository
-```bash
-git clone 
-```
 
-### 2️⃣ Backend Setup (Flask)
-```bash
+### Clone the Repository
+git clone <repo-url>
+
+### Backend setup (Flask)
 cd backend
-python -m venv env   
-env\Scripts\activate  
-python -m pip install --upgrade pip
+python -m venv env
+env\Scripts\activate      
+pip install --upgrade pip
 pip install -r requirements.txt
-python retrain_models.py
+python retrain_models.py     # Optional: retrain the models
 python app.py
-```
 
-### 3️⃣ Frontend Setup (React.js)
-```bash
+### Frontend setup (React js)
 cd frontend
 npm install
 npm start
-```
+
+---
 
 ## Usage
-- **Enter relevant disaster data** (location, weather conditions, etc.) in the web app.
-- **The ML model predicts the probability** of a disaster occurring.
-- **Results are displayed visually** with recommendations (if applicable).
+
+- Enter relevant disaster-related data (e.g., location, humidity, temperature).
+- View predictions for the likelihood of earthquakes, floods, or forest fires.
+- Follow recommended preparation or response guidelines displayed on the dashboard.
 
 ---
 
 ## Future Enhancements
-- 📌 Integrate **real-time data sources** for live predictions.
-- 🛰️ Use **satellite imagery** for forest fire detection.
-- 🌍 Develop a **mobile app** for accessibility.
+
+- Integration of real-time data from weather APIs and sensors.
+- Satellite image processing for improved forest fire detection.
+- Development of a mobile application for increased accessibility.
+- PDF report generation for disaster summaries and alerts (upcoming).
 
 ---
 
 ## Contributing
-Contributions are welcome! Feel free to fork the repo, create a new branch, and submit a pull request.
-
----
-
-
-
+Everyone is welcome for contributions to improve this project.
+If you have suggestions or feature requests, please raise an issue before starting work to ensure alignment with the project goals.
