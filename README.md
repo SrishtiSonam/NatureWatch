@@ -15,14 +15,14 @@ This is a disaster prediction and preparedness platform designed to help **predi
 
 ---
 
-## Tech Stack
+<!-- ## Tech Stack
 
 | Layer         | Technologies Used                     |
 |---------------|----------------------------------------|
 | **Frontend**  | React.js, Tailwind CSS                 |
 | **Backend**   | Flask, Python                          |
 | **ML Libraries** | Pandas, NumPy, Scikit-learn         |
-| **Visualization** | Matplotlib, Seaborn               |
+| **Visualization** | Matplotlib, Seaborn               | -->
 
 ---
 
@@ -72,7 +72,7 @@ python app.py
 ### Frontend setup (React js)
 cd frontend
 npm install
-npm start
+npm run dev
 
 ---
 
